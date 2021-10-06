@@ -1,0 +1,17 @@
+﻿  Proj1.cpp
+C:\WorkSpace\Chunika.D.D-Repos\Lab2\Proj1\Proj1\Proj1.cpp(14,10): warning C4477: "scanf_s": в строке форматирования "%s" требуется аргумент типа "unsigned int", но вариативный аргумент "2" имеет тип "char *"
+C:\WorkSpace\Chunika.D.D-Repos\Lab2\Proj1\Proj1\Proj1.cpp(14,10): message : этот аргумент используется в качестве размера буфера
+C:\WorkSpace\Chunika.D.D-Repos\Lab2\Proj1\Proj1\Proj1.cpp(14,10): warning C4476: "scanf_s": неизвестный символ поля типа "\xd1" в описателе формата
+C:\WorkSpace\Chunika.D.D-Repos\Lab2\Proj1\Proj1\Proj1.cpp(14,10): warning C4477: "scanf_s": в строке форматирования "%d" требуется аргумент типа "int *", но вариативный аргумент "4" имеет тип "unsigned short *"
+C:\WorkSpace\Chunika.D.D-Repos\Lab2\Proj1\Proj1\Proj1.cpp(14,10): message : рекомендуется использовать "%hd" в строке форматирования
+C:\WorkSpace\Chunika.D.D-Repos\Lab2\Proj1\Proj1\Proj1.cpp(16,10): warning C4477: "scanf_s": в строке форматирования "%s" требуется аргумент типа "unsigned int", но вариативный аргумент "2" имеет тип "char *"
+C:\WorkSpace\Chunika.D.D-Repos\Lab2\Proj1\Proj1\Proj1.cpp(16,10): message : этот аргумент используется в качестве размера буфера
+C:\WorkSpace\Chunika.D.D-Repos\Lab2\Proj1\Proj1\Proj1.cpp(16,10): warning C4476: "scanf_s": неизвестный символ поля типа "\xd1" в описателе формата
+C:\WorkSpace\Chunika.D.D-Repos\Lab2\Proj1\Proj1\Proj1.cpp(16,10): warning C4477: "scanf_s": в строке форматирования "%d" требуется аргумент типа "int *", но вариативный аргумент "4" имеет тип "unsigned short *"
+C:\WorkSpace\Chunika.D.D-Repos\Lab2\Proj1\Proj1\Proj1.cpp(16,10): message : рекомендуется использовать "%hd" в строке форматирования
+C:\WorkSpace\Chunika.D.D-Repos\Lab2\Proj1\Proj1\Proj1.cpp(18,13): warning C4477: "scanf_s": в строке форматирования "%s" требуется аргумент типа "unsigned int", но вариативный аргумент "2" имеет тип "char *"
+C:\WorkSpace\Chunika.D.D-Repos\Lab2\Proj1\Proj1\Proj1.cpp(18,13): message : этот аргумент используется в качестве размера буфера
+C:\WorkSpace\Chunika.D.D-Repos\Lab2\Proj1\Proj1\Proj1.cpp(18,13): warning C4476: "scanf_s": неизвестный символ поля типа "\xd1" в описателе формата
+C:\WorkSpace\Chunika.D.D-Repos\Lab2\Proj1\Proj1\Proj1.cpp(18,13): warning C4477: "scanf_s": в строке форматирования "%d" требуется аргумент типа "int *", но вариативный аргумент "4" имеет тип "unsigned short *"
+C:\WorkSpace\Chunika.D.D-Repos\Lab2\Proj1\Proj1\Proj1.cpp(18,13): message : рекомендуется использовать "%hd" в строке форматирования
+  Proj1.vcxproj -> C:\WorkSpace\Chunika.D.D-Repos\Lab2\Proj1\x64\Debug\Proj1.exe
