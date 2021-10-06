@@ -1,6 +1,6 @@
 ﻿#define _CRT_SECURE_NO_WARNINGS
 #include <stdio.h>
-#include <Windows.h>
+#include <windows.h>
 int main(void) {
 
 	SetConsoleCP(1251);
@@ -8,10 +8,10 @@ int main(void) {
 
 	char na1[9], na2[9], na3[9];
 	char type1, type2, type3;
-	unsigned short celc1, celc2, celc3;
-	unsigned short sp1, sp2, sp3;
+	int  celc1, celc2, celc3;
+	int  sp1, sp2, sp3;
 	printf("1. Введите: Вещество, Тип, Температуру (град.С), Скорость (м/с) >");
-	scanf("%s %с %hu %hu" , na1, &type1, &celc1, &sp1);
+	scanf("%s %с %d %d" , na1, &type1, &celc1, &sp1);
 	printf("2. Введите: Вещество, Тип, Температуру (град.С), Скорость (м/с) >");
 	scanf("%s %с %hu %hu" , na2, &type2, &celc2, &sp2);
 	printf("3. Введите: Вещество, Тип, Температуру (град.С), Скорость (м/с) >");
