@@ -8,10 +8,10 @@ int main(void) {
 	SetConsoleOutputCP(1251);
 	// Одз X [ -1 ] [ 1 ]
 	double x;
-	double a = 2, m = 6;
-	double n = 7;
+	double a = 2, m = 3;
+	double n = 4;
 	double t1, t2;   
-	double ax;       
+	double  ax;       
 
 	printf("Введите x = ");
 	scanf("%lf", &x);
