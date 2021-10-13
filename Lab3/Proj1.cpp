@@ -6,7 +6,7 @@ int main(void) {
 
 	SetConsoleCP(1251);
 	SetConsoleOutputCP(1251);
-	// Одз X [ -1 , -1 ] Кроме нуля
+	// Одз X [ -1 ] [ 1 ]
 	double x;
 	double a = 2, m = 6;
 	double n = 7;
