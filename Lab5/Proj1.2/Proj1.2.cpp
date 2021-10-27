@@ -10,7 +10,7 @@ int main()
     int g;
     while (1)
     {
-        printf("Введите значения k = ");
+        printf("Введите значения g = ");
         scanf("%d", &g);
 
 
@@ -18,7 +18,7 @@ int main()
             printf("У меня"" %d ""грибов\n", g);
         else
             if ((g % 10 >= 5) && (9 >= g % 10))
-                printf("У меня"" %d ""грибa\n", g);
+                printf("У меня"" %d ""грибов\n", g);
             else
                 if ((g % 10 >= 2) && (4 >= g % 10))
                     printf("У меня"" %d ""грибa\n", g);
