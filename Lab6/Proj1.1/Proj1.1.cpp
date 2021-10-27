@@ -1,31 +1,31 @@
-﻿#include <math.h> 
-#include <iostream> 
-#include <Windows.h> 
-#pragma warning(disable : 4996)
-
+﻿#define _CRT_SECURE_NO_WARNINGS
+#include <stdio.h>
+#include <math.h>
+#include <windows.h>
+#include <conio.h> 
+#include <time.h> 
 int main()
 {
-    setlocale(LC_ALL, "Russian");
+    SetConsoleCP(1251);
+    SetConsoleOutputCP(1251);
+    srand(time(0));
 
-    int k;
+    int comp_num = rand() % 100;
+    int we = 0;
+    int popytky = 0;
 
-    printf("Введите значения k = ");
-    scanf("%d", &k);
-
-    if (k == 1)
-        printf("У меня"" %d ""гриб", k);
-    else
-        if ((k >= 5) && (20 >= k)) // > 5 
-            printf("У меня"" %d ""грибов", k);
-        else
-            if ((k >= 2) && (4 >= k))
-                printf("У меня"" %d ""грибa", k);
-            else
-                if (k == 0)
-                    printf("У меня нет грибов", k);
-                else
-                    printf("У меня"" %d ""грибов", k);
-
-
-    return 0;
+    while (comp_num != we) {
+        popytky++;
+        printf("Введите число от 1 до 100 ");
+        scanf("%lf", &we);
+        if (we <= 0)
+            printf(" Это число слишком маленькое\n");
+        else if (we > 100)
+            printf("Это число слишком большое\n ");
+        else if (comp_num = we)
+            printf("Ура! вы угадали \n");
+        printf("-У вас было столько попыток \n", &popytky);
+    }
+        return 0;
+ 
 }
