@@ -1,31 +1,33 @@
 ﻿#define _CRT_SECURE_NO_WARNINGS
 #include <stdio.h>
-#include <math.h>
-#include <windows.h>
-#include <conio.h> 
-#include <time.h> 
-int main()
-{
-    SetConsoleCP(1251);
-    SetConsoleOutputCP(1251);
-    srand(time(0));
+#include <time.h>
+#include <iostream>
+#include <Windows.h>
 
-    int comp_num = rand() % 100;
-    int we = 0;
-    int popytky = 0;
+int main(void) {
 
-    while (comp_num != we) {
-        popytky++;
-        printf("Введите число от 1 до 100 ");
-        scanf("%lf", &we);
-        if (we <= 0)
-            printf(" Это число слишком маленькое\n");
-        else if (we > 100)
-            printf("Это число слишком большое\n ");
-        else if (comp_num = we)
-            printf("Ура! вы угадали \n");
-        printf("-У вас было столько попыток \n", &popytky);
-    }
-        return 0;
- 
+	SetConsoleCP(1251);
+	SetConsoleOutputCP(1251);
+
+	srand(time(0));
+	int num = rand() % 100;
+
+	int j = 0;
+	int num2 = 0;
+	printf("Отгадайте число от 0 до 100\n");
+	while (num2 != num)
+	{
+		++j;
+		printf("Введите ваше значениe ");
+		scanf("%d", &num2);
+		if (num > num2)
+			printf("Загаданное число больше вашего\n");
+		else if (num < num2)
+			printf("Загаданное число меньше вашего\n");
+		else if (num2 > 100)
+			printf("Недопустимое Значение\n");
+	}
+	printf("Вы угадали за"" %d ""попыток\n", j);
+	printf("\n\n\n");
+	return 0;
 }

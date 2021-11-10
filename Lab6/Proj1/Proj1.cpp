@@ -19,7 +19,7 @@ int main(void) {
 
         dbln = n;
 
-        term = k1 * ((n - 1) / 2 * pow(dbln, 2) + 1);
+        term = k1 * ((dbln - 1) / (2 * pow(dbln, 2) + 1));
 
         if (fabs(term) >= eps)
  
