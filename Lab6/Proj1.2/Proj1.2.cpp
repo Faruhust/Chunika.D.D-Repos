@@ -1,17 +1,24 @@
-﻿
+﻿#define _CRT_SECURE_NO_WARNINGS
 #include <iostream>
 #include <time.h>
+#include <windows.h>
+
 using namespace std;
 
 int main()
 {
+
+    SetConsoleCP(1251);
+    SetConsoleOutputCP(1251);
+
+
     printf("Тест на знание таблици умножения:\n");
 
     srand(time(NULL));
 
     int user_num, result = 0, nquestion;
 
-    for (nquestion = 1; nquestion <= 5; nquestion++) {
+    for (nquestion = 1; nquestion <= 10; nquestion++) {
 
         int randomn1 = rand() % 10 + 1;
         int randomn2 = rand() % 10 + 1;
