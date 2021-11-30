@@ -23,8 +23,8 @@ int main(void) {
 
 		printf ("Начальный массив");										//Выведение на экран масива
 	for (i = 0; i < 200; printf("%3d  ", Ar[i++]));							
-	putchar('\n');
-	putchar('\n');
+	printf("\n");
+	printf("\n");
 
 	for (nn = i = 0; i < 200; i++) {
 		if (Ar[i] < 0)
@@ -64,7 +64,7 @@ int main(void) {
 
 
 
-	putchar('\n');
+	printf("\n");
 
 
 	getchar();
