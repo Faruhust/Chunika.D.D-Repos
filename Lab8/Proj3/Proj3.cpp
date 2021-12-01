@@ -90,7 +90,7 @@ int main()
 
             else {
 
-                for (; i < arr_size - k; i++) {
+                for (; i < arr_size + k; i++) {
                     arr[i] = arr[i + k];
                 }
 
