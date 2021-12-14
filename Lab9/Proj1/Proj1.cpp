@@ -1,7 +1,7 @@
 ﻿#define _CRT_SECURE_NO_WARNINGS
 #include <iostream>
 #include <ctime>
-#define N 5
+#define N 9
 
 
 int main()

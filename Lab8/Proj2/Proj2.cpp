@@ -1,67 +1,69 @@
 ﻿#include <iostream>
+
 #include <math.h>
+
 #include <iomanip>
+
 #include <ctime>
+#pragma warning(disable : 4996)
 #include <string>
 
 using namespace std;
-int main()
 
-{
 
-    int const SIZE = 5;
-    int smoking_space[SIZE] = { 1, 2, 3, 4, 5 };
-    int no_smoking_space[SIZE] = { 6, 7, 8, 9, 10 };
-    cout << "Welcome to booking service UkraineAirLines. " << endl;
-    cout << "We have two sitings areas \"smoking space\" and no \"smoking space\". You need to chose one." << endl;
 
-    string answer;
-    string smoke("yes");
-    string no_smoke("no");
 
-    int book_break = 0;
-    int i = 0, j = 0;
-    while (book_break < SIZE * 2) {
+int main() {
+    setlocale(LC_ALL, "Russian");
+    int Ar[6];
+    int Mass[6];
+    int i = 0;
+    int b = 0;
+    int all_places = 0;
+    int smoking_place = 0;
+    string a;
+    int no_smoking_place = 0;
 
-        cout << "Are you smoking?<yes/no>  ";
-        cin >> answer;
 
-        if (cin.fail()) {
-           cin.clear();
+    cout << "Вас приветствует компания UkraineAirLines" << endl;
 
+    cout << "Для бронирования билетов сообщите, пожалуйста, курите вы или нет" << endl;
+
+    for (int i = 0; ;)
+    {
+        cout << "Вы курите? <yes/no>";
+
+        cin >> a;
+
+        if (a == "yes" && smoking_place < 5)
+        {
+            i++;
+            Ar[i] = i;
+            smoking_place = Ar[i];
+            cout << "Ваше место:" << smoking_place << endl;
+            int all_places = i + b;
+            if (all_places == 10)
+            {
+                cout << "Места закончились" << endl;
+                break;
+            }
             continue;
-
+        }
+        if (a == "no" && no_smoking_place < 10)
+        {
+            b++;
+            Mass[b] = b + 5;
+            no_smoking_place = Mass[b];
+            cout << "Ваше место:" << no_smoking_place << endl;
+            int all_places = i + b;
+            if (all_places == 10)
+            {
+                cout << "Места закончились" << endl;
+                break;
+            }
+            continue;
         }
 
-
-        if (answer == smoke) {
-            if (i < 5) {
-                cout << " Place " << smoking_space[i] << " is booked in the smoking space!" << endl;
-                i++;
-                book_break++;
-            }
-            else {
-                cout << "We are sorry. All sits int smoking area has been reserved." << endl;
-            }
-
-        }
-
-        else if (answer == no_smoke) {
-            if (j < 5) {
-                cout << " Place " << no_smoking_space[j] << " is booked! in the no smoking space" << endl;
-                j++;
-                book_break++;
-            }
-            else {
-                cout << "We are sorry. All sits in the no smoking area has been reserved." << endl;
-            }
-        }
     }
-
-    cout << endl;
-    cout << " All sits has been reserved. Please wait or chek for another flight." << endl;
-    cout << " Fare you well!" << endl;
-    cout << endl << " Sold out!" << endl;
     return 0;
-
 }

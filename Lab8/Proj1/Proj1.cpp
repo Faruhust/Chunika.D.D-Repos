@@ -1,72 +1,42 @@
-﻿#include <stdio.h>
-#include <time.h>
-#include <stdlib.h>
-#include <iostream>
-#include <conio.h>
-#include <Windows.h>
-int Ar[200];					//Начальный массив
-int mas[200];					//Изменяемый массив 
-int main(void) {
-
-	SetConsoleCP(1251);
-	SetConsoleOutputCP(1251);
-
-	int i, j, v, t;					//Элементы в масивах
-	int av;							//Среднее
-	int nn;							//Неизвестная
-	int ib, qq, q;
-
-	rand();
-
-
-	for (i = 0; i < 200; Ar[i++] = rand()%100 - 50);						//Элементу масива присваевается число от -50 до +50
-
-		printf ("Начальный массив");										//Выведение на экран масива
-	for (i = 0; i < 200; printf("%3d  ", Ar[i++]));							
-	printf("\n");
-	printf("\n");
-
-	for (nn = i = 0; i < 200; i++) {
-		if (Ar[i] < 0)
-
-			if (!nn) {
-
-				ib = i; av = Ar[i]; nn = 1;
-			}
-			else {
-
-				av += Ar[i]; nn++;
-			}
-
-		else
-			if (nn) {
-
-				av /= nn;							//Присвоения среднего
-				v = 0; t = 0;
-				for (j = ib; j < i; j++)
-					if (Ar[j] < av)Ar[j] = av; {
-					t++;
-					mas[t] = av;
-					nn = 0;
-
-				}
-
-
-				printf("%3d ", mas[t]);
+﻿#include <iostream>
+#include "math.h"
+using namespace std;
 
 
 
-			}
-	}
-
-	;
-
-
-
-
-	printf("\n");
-
-
-	getchar();
-	return 0;
+int main()
+{
+    setlocale(LC_ALL, "ru");
+    const int size = 200;
+    int MyArray[size];
+    int result = 0, average = 0;
+    double min = 0, score = 0, temp = 0;
+    for (int i = 0; i < size; i++)
+    {
+        MyArray[i] = rand() % 100 - 50;
+        cout << MyArray[i] << '\ ';
+    }
+    cout << endl << endl << "Непрерывная последовательность отрицательных чисел :";
+    for (int i = 0; i < size; i++)
+    {
+        if (MyArray[i] < 0) {
+            min += fabs(MyArray[i]);
+            cout << MyArray[i] << '\ ';
+            score++;
+        }
+        if (MyArray[i] > 0 && score > 0) {
+            cout << endl;
+            average = min / score;
+            min = 0;
+            score = 0;
+            temp++;
+            cout << "Среднее значение " << temp << " = " << average << endl;
+            if (result < average) {
+                result = average;
+                cout << "Результат выбора найбольшего среднего значения " << temp << " = " << result << endl;
+            }
+            cout << "Непрерывная последовательность отрицательных чисел :";
+        }
+    }
+    cout << "Абсолютное значение среднего арифметического элементов непрерывной последовательности отрицательных чисел: " << result << endl;
 }
