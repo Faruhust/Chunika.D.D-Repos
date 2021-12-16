@@ -4,7 +4,8 @@
 #include<iomanip>
 #include <chrono>
 #define M 100
-#define Size_m 50 // Размер нашей матрицы 
+#define Size_m 45
+
 
 using namespace std;
 int type;
