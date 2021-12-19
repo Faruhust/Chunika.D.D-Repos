@@ -43,7 +43,7 @@ int main()
         {
 
 
-            arr[i][j] = rand() % 15;
+            arr[i][j] = rand() % 18;
             cout << setw(4) << arr[i][j];
         }
         cout << endl;
@@ -53,7 +53,7 @@ int main()
     {
         for (int j = 0; j < sizecol; j++)
         {
-            mas[i][j] = rand() % 15;
+            mas[i][j] = rand() % 18;
             cout << setw(4) << mas[i][j];
         }
         cout << endl;

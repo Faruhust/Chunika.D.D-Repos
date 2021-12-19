@@ -10,7 +10,7 @@ int array_print(int arr[M][M], int razm_str, int razm_stol) {
 
     for (int i = 0; i < razm_str; i++) {
         for (int j = 0; j < razm_stol; j++) {
-            arr[i][j] = rand() % 10 - 5;
+            arr[i][j] = rand() % 100 - 50;
             cout << setw(3) << arr[i][j];
         }
         cout << endl;

@@ -16,7 +16,7 @@ int main()
     {
         for (int j = 0; j < M; j++)
         {
-            arr[i][j] = rand() % 10 + 1;
+            arr[i][j] = rand() % 100 - 50;
             mass[i][j] = arr[i][j];
             cout << setw(4) << arr[i][j];
         }
